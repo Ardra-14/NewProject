@@ -1,0 +1,54 @@
+import 'package:flutter/material.dart';
+
+class Multichildlayouts extends StatelessWidget{
+   @override
+   Widget build(BuildContext context){
+    return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          Navigator.pop(context);
+        },
+        child:Icon(Icons.home),
+        backgroundColor: const Color.fromARGB(255, 4, 68, 121),
+          foregroundColor: Colors.white,
+          shape:CircleBorder(),
+        ),
+      body: Container(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        color: Color.fromARGB(255, 236, 194, 231),
+        child:Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          // textDirection: TextDirection.rtl,
+          children: <Widget>[
+            Container(
+              width: 100,
+              height: 100,
+              color: Color.fromARGB(255, 245, 119, 73),
+              child: Center(
+                child: Text("One"),
+                ),
+            ),
+            Container(
+              width: 100,
+              height: 100,
+              color: Color.fromARGB(255, 30, 133, 73),
+              child: Center(
+                child: Text("Two"),
+                ),
+            ),
+            Container(
+              width: 100,
+              height: 100,
+              color: Color.fromARGB(255, 47, 152, 160),
+              child: Center(
+                child: Text("Three"),
+                ),
+            ),
+          ],
+        ),
+           ),
+    );
+   }
+}
