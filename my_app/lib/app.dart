@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/Screens/Positioned.dart';
+import 'package:my_app/Screens/example.dart';
 import 'package:my_app/Screens/homewidget.dart';
 import 'package:my_app/Screens/appbar.dart';
 import 'package:my_app/Screens/imagewidget.dart';
@@ -10,6 +12,7 @@ import 'package:my_app/Screens/stackwidget.dart';
 import 'package:my_app/Screens/textwidget.dart';
 import 'package:my_app/Screens/listtilewidget.dart';
 import 'package:my_app/Screens/textfieldwidget.dart';
+import 'package:my_app/Screens/tabbar.dart';
 
 
 class App extends StatelessWidget{
@@ -30,6 +33,9 @@ class App extends StatelessWidget{
         '/textwidget':(context)=>TextWidget(),
         '/listtilewidget':(context)=>ListTileWidget(),
         '/textfieldwidget':(context)=>TextFieldwidget(),
+        '/example':(context)=>Example(),
+        '/tabBar':(context)=>Tabbar(),
+        '/positioned':(context)=>Positionedwidget(),
       },
       initialRoute: '/',
     );

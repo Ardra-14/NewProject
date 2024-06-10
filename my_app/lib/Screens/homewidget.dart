@@ -38,159 +38,206 @@ class HomeWidget extends StatelessWidget {
         ],
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            OutlinedButton(
-              style: ButtonStyle(
-                foregroundColor:
-                    WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
-                padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+        child: Padding(
+          padding: const EdgeInsets.all(25),
+          child: ListView(
+            children: [
+              OutlinedButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/appbar');
+                },
+                child: Text(
+                  "AppBar Widget",
+                  style: TextStyle(fontSize: 20),
+                ),
               ),
-              onPressed: () {
-                Navigator.pushNamed(context, '/appbar');
-              },
-              child: Text(
-                "AppBar Widget",
-                style: TextStyle(fontSize: 20),
+              SizedBox(height: 10),
+              OutlinedButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/imagewidget');
+                },
+                child: Text(
+                  "Image Widget",
+                  style: TextStyle(fontSize: 20),
+                ),
               ),
-            ),
-            SizedBox(height: 10),
-            OutlinedButton(
-              style: ButtonStyle(
-                foregroundColor:
-                    WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
-                padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+              SizedBox(height: 10),
+               OutlinedButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/multichildlayoutwidget');
+                },
+                child: Text(
+                  "Row Widget",
+                  style: TextStyle(fontSize: 20),
+                ),
               ),
-              onPressed: () {
-                Navigator.pushNamed(context, '/imagewidget');
-              },
-              child: Text(
-                "Image Widget",
-                style: TextStyle(fontSize: 20),
+              SizedBox(height: 10),
+              OutlinedButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/columnwidget');
+                },
+                child: Text(
+                  "Column Widget",
+                  style: TextStyle(fontSize: 20),
+                ),
               ),
-            ),
-            SizedBox(height: 10),
-             OutlinedButton(
-              style: ButtonStyle(
-                foregroundColor:
-                    WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
-                padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+              SizedBox(height: 10),
+               OutlinedButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/listviewwidget');
+                },
+                child: Text(
+                  "ListView Widget",
+                  style: TextStyle(fontSize: 20),
+                ),
               ),
-              onPressed: () {
-                Navigator.pushNamed(context, '/multichildlayoutwidget');
-              },
-              child: Text(
-                "Row Widget",
-                style: TextStyle(fontSize: 20),
+               SizedBox(height: 10),
+               OutlinedButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/buttonsample');
+                },
+                child: Text(
+                  "Button Samples",
+                  style: TextStyle(fontSize: 20),
+                ),
               ),
-            ),
-            SizedBox(height: 10),
-            OutlinedButton(
-              style: ButtonStyle(
-                foregroundColor:
-                    WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
-                padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+              SizedBox(height: 10),
+               OutlinedButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/stackwidget');
+                },
+                child: Text(
+                  "Stack Widget",
+                  style: TextStyle(fontSize: 20),
+                ),
               ),
-              onPressed: () {
-                Navigator.pushNamed(context, '/columnwidget');
-              },
-              child: Text(
-                "Column Widget",
-                style: TextStyle(fontSize: 20),
+              SizedBox(height: 10),
+               OutlinedButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/textwidget');
+                },
+                child: Text(
+                  "Text Widget",
+                  style: TextStyle(fontSize: 20),
+                ),
               ),
-            ),
-            SizedBox(height: 10),
-             OutlinedButton(
-              style: ButtonStyle(
-                foregroundColor:
-                    WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
-                padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+              SizedBox(height: 10),
+               OutlinedButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/listtilewidget');
+                },
+                child: Text(
+                  "ListTile Widget",
+                  style: TextStyle(fontSize: 20),
+                ),
               ),
-              onPressed: () {
-                Navigator.pushNamed(context, '/listviewwidget');
-              },
-              child: Text(
-                "ListView Widget",
-                style: TextStyle(fontSize: 20),
+              SizedBox(height: 10),
+               OutlinedButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/textfieldwidget');
+                },
+                child: Text(
+                  "TextField Widget",
+                  style: TextStyle(fontSize: 20),
+                ),
               ),
-            ),
-             SizedBox(height: 10),
-             OutlinedButton(
-              style: ButtonStyle(
-                foregroundColor:
-                    WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
-                padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+              SizedBox(height: 10),
+               OutlinedButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/example');
+                },
+                child: Text(
+                  "Example",
+                  style: TextStyle(fontSize: 20),
+                ),
               ),
-              onPressed: () {
-                Navigator.pushNamed(context, '/buttonsample');
-              },
-              child: Text(
-                "Button Samples",
-                style: TextStyle(fontSize: 20),
+               SizedBox(height: 10),
+               OutlinedButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/tabBar');
+                },
+                child: Text(
+                  "Tab Bar",
+                  style: TextStyle(fontSize: 20),
+                ),
               ),
-            ),
-            SizedBox(height: 10),
-             OutlinedButton(
-              style: ButtonStyle(
-                foregroundColor:
-                    WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
-                padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+              SizedBox(height: 10),
+               OutlinedButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/positioned');
+                },
+                child: Text(
+                  "Positioned Widget",
+                  style: TextStyle(fontSize: 20),
+                ),
               ),
-              onPressed: () {
-                Navigator.pushNamed(context, '/stackwidget');
-              },
-              child: Text(
-                "Stack Widget",
-                style: TextStyle(fontSize: 20),
-              ),
-            ),
-            SizedBox(height: 10),
-             OutlinedButton(
-              style: ButtonStyle(
-                foregroundColor:
-                    WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
-                padding: WidgetStateProperty.all(EdgeInsets.all(20)),
-              ),
-              onPressed: () {
-                Navigator.pushNamed(context, '/textwidget');
-              },
-              child: Text(
-                "Text Widget",
-                style: TextStyle(fontSize: 20),
-              ),
-            ),
-            SizedBox(height: 10),
-             OutlinedButton(
-              style: ButtonStyle(
-                foregroundColor:
-                    WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
-                padding: WidgetStateProperty.all(EdgeInsets.all(20)),
-              ),
-              onPressed: () {
-                Navigator.pushNamed(context, '/listtilewidget');
-              },
-              child: Text(
-                "ListTile Widget",
-                style: TextStyle(fontSize: 20),
-              ),
-            ),
-            SizedBox(height: 10),
-             OutlinedButton(
-              style: ButtonStyle(
-                foregroundColor:
-                    WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
-                padding: WidgetStateProperty.all(EdgeInsets.all(20)),
-              ),
-              onPressed: () {
-                Navigator.pushNamed(context, '/textfieldwidget');
-              },
-              child: Text(
-                "TextField Widget",
-                style: TextStyle(fontSize: 20),
-              ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
