@@ -236,6 +236,51 @@ class HomeWidget extends StatelessWidget {
                   style: TextStyle(fontSize: 20),
                 ),
               ),
+              SizedBox(height: 10),
+               OutlinedButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/circleAvatar');
+                },
+                child: Text(
+                  "Circle Avatar",
+                  style: TextStyle(fontSize: 20),
+                ),
+              ),
+              SizedBox(height: 10),
+               OutlinedButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/bottomNavigation');
+                },
+                child: Text(
+                  "Bottom Navigation",
+                  style: TextStyle(fontSize: 20),
+                ),
+              ),
+              SizedBox(height: 10),
+               OutlinedButton(
+                style: ButtonStyle(
+                  foregroundColor:
+                      WidgetStateProperty.all(Color.fromARGB(255, 102, 5, 78)),
+                  padding: WidgetStateProperty.all(EdgeInsets.all(20)),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/radioButton');
+                },
+                child: Text(
+                  "Button",
+                  style: TextStyle(fontSize: 20),
+                ),
+              ),
             ],
           ),
         ),

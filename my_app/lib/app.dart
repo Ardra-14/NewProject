@@ -13,6 +13,9 @@ import 'package:my_app/Screens/textwidget.dart';
 import 'package:my_app/Screens/listtilewidget.dart';
 import 'package:my_app/Screens/textfieldwidget.dart';
 import 'package:my_app/Screens/tabbar.dart';
+import 'package:my_app/Screens/circleAvatar.dart';
+import 'package:my_app/Screens/bottomNavigation.dart';
+import 'package:my_app/Screens/radioButton.dart';
 
 
 class App extends StatelessWidget{
@@ -36,6 +39,9 @@ class App extends StatelessWidget{
         '/example':(context)=>Example(),
         '/tabBar':(context)=>Tabbar(),
         '/positioned':(context)=>Positionedwidget(),
+        '/circleAvatar':(context)=>CircleAvatarWidget(),
+        '/bottomNavigation':(context)=>bottomNavigationBar(),
+        '/radioButton':(context)=>RadioButtonWidget(),
       },
       initialRoute: '/',
     );
